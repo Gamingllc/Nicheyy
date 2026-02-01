@@ -11,12 +11,12 @@ const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[70] flex items-center justify-center p-2 sm:p-4">
-      <div 
+      <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in"
         onClick={onClose}
       />
       <div className="relative w-full max-w-xl bg-white border-[4px] border-black neo-shadow p-5 sm:p-8 animate-in zoom-in-95 duration-200 overflow-y-auto max-h-[90vh]">
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-4 right-4 p-1.5 bg-white border-2 border-black hover:bg-[#00ffff] transition-colors"
         >
@@ -36,7 +36,7 @@ const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) => {
               <p>We don't track your identity. You are a ghost to us.</p>
             </div>
           </div>
-          
+
           <div className="p-3 sm:p-4 border-2 border-black bg-gray-50 flex gap-3 sm:gap-4">
             <Database className="shrink-0 text-[#ccff00] w-5 h-5 sm:w-6 sm:h-6" />
             <div>
@@ -48,13 +48,13 @@ const PrivacyModal: React.FC<PrivacyModalProps> = ({ isOpen, onClose }) => {
           <div className="p-3 sm:p-4 border-2 border-black bg-gray-50 flex gap-3 sm:gap-4">
             <Shield className="shrink-0 text-[#00ffff] w-5 h-5 sm:w-6 sm:h-6" />
             <div>
-              <p className="text-[#00ffff] mb-0.5">AI PROCESSING</p>
-              <p>Vibes are sent to Gemini for generation but are not stored by Nicheyy servers.</p>
+              <p className="text-[#00ffff] mb-0.5">THIRD-PARTY ADS & COOKIES</p>
+              <p className="normal-case font-medium">We use Google AdSense to serve ads. Google uses cookies to serve ads based on your prior visits to this or other websites. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" className="underline hover:text-[#b026ff]">Ads Settings</a>.</p>
             </div>
           </div>
 
           <div className="p-3 border-4 border-black bg-[#00ffff]/10 text-center font-black tracking-widest text-[8px] sm:text-xs">
-            ENCRYPTED BY COMMON SENSE.
+            DATA PRIVACY COMPLIANT // NO SURVEILLANCE.
           </div>
         </div>
       </div>

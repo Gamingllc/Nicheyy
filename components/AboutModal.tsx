@@ -11,13 +11,13 @@ const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-2 sm:p-4">
-      <div 
+      <div
         className="absolute inset-0 bg-black/80 backdrop-blur-xl animate-in fade-in"
         onClick={onClose}
       />
 
       <div className="relative w-full max-w-4xl bg-white border-[4px] sm:border-[6px] border-black neo-shadow-lg p-0 animate-in zoom-in-95 slide-in-from-bottom-10 duration-500 max-h-[95vh] sm:max-h-[90vh] overflow-hidden flex flex-col">
-        
+
         <div className="bg-black text-white px-4 py-2 sm:px-6 sm:py-3 flex justify-between items-center shrink-0">
           <div className="flex items-center gap-1.5 sm:gap-2">
             <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-red-500" />
@@ -25,7 +25,7 @@ const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
             <div className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-green-500" />
           </div>
           <span className="text-[8px] sm:text-[10px] font-black uppercase tracking-[0.2em] sm:tracking-[0.3em] truncate">System.About_Nicheyy</span>
-          <button 
+          <button
             onClick={onClose}
             className="p-1.5 bg-white text-black border-2 border-black hover:bg-[#ccff00] transition-colors"
           >
@@ -45,7 +45,7 @@ const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
               THE <span className="text-[#b026ff]">HUSTLE</span><br />
               MANIFESTO.
             </h2>
-            
+
             <p className="text-lg sm:text-2xl md:text-3xl font-black text-black leading-tight max-w-2xl">
               Nicheyy isn't an "app." It's a <span className="bg-[#ccff00] px-1.5 border-2 border-black">weapon</span> for creators ready to <span className="underline decoration-[#b026ff] decoration-4 underline-offset-2">launch</span>.
             </p>
@@ -73,16 +73,16 @@ const AboutModal: React.FC<AboutModalProps> = ({ isOpen, onClose }) => {
                 <Rocket size={24} className="sm:w-9 sm:h-9 text-[#ccff00]" />
                 <h3 className="text-2xl sm:text-3xl font-black uppercase tracking-tighter">FUTURE GEN</h3>
               </div>
-              
+
               <div className="space-y-3 sm:space-y-4">
                 <div className="p-4 sm:p-5 bg-black border-2 border-white neo-shadow-sm cursor-default">
-                  <span className="text-[#ccff00] font-black text-[8px] sm:text-[10px] uppercase tracking-widest">Coming Soon</span>
+                  <span className="text-[#ccff00] font-black text-[8px] sm:text-[10px] uppercase tracking-widest">Future Ecosystem</span>
                   <h4 className="text-lg sm:text-xl font-black uppercase mt-1">NICHEYY PRO</h4>
                   <p className="text-xs sm:text-sm font-bold opacity-80">Blueprints and market analysis.</p>
                 </div>
 
                 <div className="p-4 sm:p-5 bg-white text-black border-2 border-black neo-shadow-sm cursor-default">
-                  <span className="text-[#b026ff] font-black text-[8px] sm:text-[10px] uppercase tracking-widest">In Testing</span>
+                  <span className="text-[#b026ff] font-black text-[8px] sm:text-[10px] uppercase tracking-widest">Active Development</span>
                   <h4 className="text-lg sm:text-xl font-black uppercase mt-1">ULTRA-GEN</h4>
                   <p className="text-xs sm:text-sm font-bold opacity-80">Hyper-niche physical products.</p>
                 </div>

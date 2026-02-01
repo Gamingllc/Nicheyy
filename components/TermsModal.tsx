@@ -11,12 +11,12 @@ const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <div className="fixed inset-0 z-[70] flex items-center justify-center p-2 sm:p-4">
-      <div 
+      <div
         className="absolute inset-0 bg-black/60 backdrop-blur-sm animate-in fade-in"
         onClick={onClose}
       />
       <div className="relative w-full max-w-xl bg-white border-[4px] border-black neo-shadow p-6 sm:p-8 animate-in zoom-in-95 duration-200">
-        <button 
+        <button
           onClick={onClose}
           className="absolute top-4 right-4 p-1.5 bg-white border-2 border-black hover:bg-[#ccff00] transition-colors"
         >
@@ -33,19 +33,19 @@ const TermsModal: React.FC<TermsModalProps> = ({ isOpen, onClose }) => {
             <p className="text-[#b026ff] mb-0.5">1. YOUR WORK</p>
             <p>Ideas are just starts. You do the work. We aren't responsible for your success.</p>
           </div>
-          
+
           <div className="p-3 border-2 border-black bg-gray-50">
             <p className="text-[#b026ff] mb-0.5">2. NO SPAM</p>
             <p>Don't use our AI to be a jerk. Build cool stuff instead.</p>
           </div>
 
           <div className="p-3 border-2 border-black bg-gray-50">
-            <p className="text-[#b026ff] mb-0.5">3. PRIVACY</p>
-            <p>We don't save your text. Your vibe is your vibe.</p>
+            <p className="text-[#b026ff] mb-0.5">3. NO WARRANTIES</p>
+            <p className="normal-case font-medium">This service is provided "as is". We don't guarantee that the ideas generated will lead to profit or success. Use at your own risk.</p>
           </div>
 
           <div className="p-3 border-4 border-black bg-[#ccff00]/10 text-center font-black">
-            PLAY FAIR AND HUSTLE HARD.
+            PLAY FAIR // HUSTLE RESPONSIBLY.
           </div>
         </div>
       </div>
